@@ -1,0 +1,85 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "../protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+
+WorldInfo {
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation 0.2972974542877859 0.31623199526772283 -0.9008948600380606 1.6134071422023133
+  position -0.09990326243484504 1.6553237935645484 1.2451904899358364
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+Solid {
+  translation 0.376213 0.128634 0.15
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.788235 0.4 0.9
+        }
+      }
+      geometry Cylinder {
+        bottom FALSE
+        height 0.3
+        radius 0.08
+      }
+      castShadows FALSE
+    }
+  ]
+  boundingObject Cylinder {
+    height 0.3
+    radius 0.05
+  }
+  recognitionColors [
+    1 0 0.498039
+  ]
+  translationStep 0.18
+  rotationStep 0.261797
+}
+Solid {
+  translation -0.193787 -0.391366 0.15
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.666667 1 0
+        }
+      }
+      geometry Cylinder {
+        bottom FALSE
+        height 0.3
+        radius 0.08
+      }
+      castShadows FALSE
+    }
+  ]
+  name "goal"
+  boundingObject Cylinder {
+    height 0.3
+    radius 0.05
+  }
+  recognitionColors [
+    0.666667 1 0
+  ]
+}
+E-puck {
+  translation -0.22977173956669708 0.2613819277788508 -3.865640614109274e-05
+  rotation -7.306682723800315e-05 2.7101112648321603e-05 -0.9999999969633842 -2.4725661689144824
+  name "e-puck"
+  controller "vision_excercise_2"
+  camera_recognition Recognition {
+  }
+}
+RectangleArena {
+}
