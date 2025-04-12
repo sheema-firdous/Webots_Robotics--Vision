@@ -22,9 +22,6 @@ This Webots project features a robot equipped with a camera that uses object rec
 
 ---
 
-
----
-
 ## 🧠 How It Works
 
 ### 🔍 Object Recognition and Target Detection
@@ -47,3 +44,15 @@ This Webots project features a robot equipped with a camera that uses object rec
 - 🎨 **Change Target Color**:
   ```python
   TARGET_COLOR = [0.8, 0.5, 0.5]  # Adjust this for your desired color
+
+
+---
+
+## 👩‍💻 Developers Information
+
+Developed by **[Sheema Firdous](https://www.linkedin.com/in/sheema-firdous-67b9b8181/)**  
+as part of the **Cognitive Systems and Robotics** module assessment  at **[Sheffield Hallam University](https://www.shu.ac.uk/)**
+
+Supervised by [Dr. Samuele Vinanzi](https://www.linkedin.com/in/samuelevinanzi/)
+
+This project demonstrates the practical application of reinforcement learning (Q-learning) in autonomous robotics using Webots and Python.
